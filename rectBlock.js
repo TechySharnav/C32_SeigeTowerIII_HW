@@ -19,7 +19,7 @@ class rectBlock {
     var pos = this.body.position;
     var angle = this.body.angle;
 
-    console.log(this.body.speed);
+    //console.log(this.body.speed);
 
     if(this.body.speed < 10){
     push();
