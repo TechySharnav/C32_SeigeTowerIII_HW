@@ -147,7 +147,7 @@ function draw() {
 	textSize(40);
     text(Score, width -100, 60);
 	
-	console.log(stone.body.position.x);
+	//console.log(stone.body.position.x);
 
     stone.display();
 
