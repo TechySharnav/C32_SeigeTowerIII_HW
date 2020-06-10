@@ -13,7 +13,7 @@ function preload() {
    // backgroundImg = loadImage("sprites/bg_day.jpg");
 
    getBGImg();
-   font = loadFont('sprites/font.TTF');
+   font = loadFont('sprites/font.otf');
 }
 
 function setup() {
