@@ -173,7 +173,8 @@ async function getBGImg(){
     var responseJSON = await response.json();
     var datetime = responseJSON.datetime;
     var hour = datetime.slice(11,13);
-
+    console.log(hour);
+	ss
     if(hour >= 06 && hour <= 18){
         bg = 'sprites/bg_day.jpg';
     }
