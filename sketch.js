@@ -8,6 +8,7 @@ var backgroundImg, platform;
 var stone, slingShot;
 var bg;
 var Score = 0;
+var gameState = "OnSling";
 
 function preload() {
    // backgroundImg = loadImage("sprites/bg_day.jpg");
@@ -159,17 +160,21 @@ function mouseDragged() {
 
 
 function mouseReleased() {
+if(gameState === "OnSling"){
     slingShot.fly();
+    gameState = "fly"
+ }
 }
 
 function keyPressed(){
     if(keyCode === 32){
         slingShot.attach(stone.body);
+	gameState = "OnSling"
     }
 }
 
 async function getBGImg(){
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    var response = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
     var responseJSON = await response.json();
     var datetime = responseJSON.datetime;
     var hour = datetime.slice(11,13);
