@@ -6,14 +6,14 @@ const Constraint = Matter.Constraint;
 var engine, world;
 var backgroundImg, platform;
 var stone, slingShot;
-var bg, font;
+var bg;
 var Score = 0;
 
 function preload() {
    // backgroundImg = loadImage("sprites/bg_day.jpg");
 
    getBGImg();
-   font = loadFont('sprites/font.otf');
+   //font = loadFont('sprites/font.otf');
 }
 
 function setup() {
@@ -140,7 +140,7 @@ function draw() {
     text("Drag the stone & Destroy the Tower of Blocks!!",480, 30);
     textSize(12);
     text("(Hit them really hard to make them disappear. Press SPACE to attach stone to Slingshot.)",440, 50);
-    textFont(font);
+    //textFont(font);
     textSize(20);
     fill("#FF6600");
     text("Score:", width-120, 25);
