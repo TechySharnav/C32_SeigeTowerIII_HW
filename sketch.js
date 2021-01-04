@@ -11,9 +11,9 @@ var Score = 0;
 var gameState = "OnSling";
 
 function preload() {
-   // backgroundImg = loadImage("sprites/bg_day.jpg");
+   backgroundImg = loadImage("sprites/bg_day.jpg");
 
-   getBGImg();
+   //getBGImg();
    //font = loadFont('sprites/font.otf');
 }
 
